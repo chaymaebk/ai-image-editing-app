@@ -22,7 +22,7 @@ python app.py
 cd ../frontend
 npm install
 npm start
-How It Works
+## How It Works
 The user uploads an image and a mask.
 Enters a text prompt
 The app sends the data to the backend, which calls the Stability AI Inpainting API.
