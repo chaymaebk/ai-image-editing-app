@@ -1,0 +1,113 @@
+/* Conteneur principal centré avec ombre douce */
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border: 1.5px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2); /* légère ombre bleutée */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222222;
+  text-align: center;
+}
+
+/* Titre avec style épuré, ombre légère et espacement */
+h1 {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: 700;
+  font-size: 2.2rem;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+  letter-spacing: 1.1px;
+  background: #f0f8ff; /* fond très clair bleu */
+  transition: box-shadow 0.3s ease;
+}
+
+h1:hover {
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3);
+}
+
+/* Boutons modernes avec dégradé et ombre */
+button {
+  background: linear-gradient(135deg, #0069d9, #0053ba);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 12px;
+  box-shadow: 0 5px 12px rgba(0, 83, 186, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #004a99, #003d7a);
+  box-shadow: 0 7px 16px rgba(0, 61, 122, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Formulaire avec espacement propre */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Inputs avec style uniforme */
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1.5px solid #cbd5e1;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px #66aaff;
+}
+
+/* Résultat image */
+img {
+  margin-top: 30px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 480px) {
+  .App {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    padding: 10px 18px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  input[type="file"],
+  input[type="text"] {
+    max-width: 100%;
+  }
+}
